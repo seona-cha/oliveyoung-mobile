@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>올리브영 온라인몰</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#main">본문바로가기</a>
+    </div>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <header class="header on">
+            <div class="group-top">
+                <div class="logo-area">
+                    <h1 class="logo"><a href="#"><span class="blind">올리브영 온라인몰</span></a></h1>
+                </div>
+                <div class="search-area">
+                    <button>
+                        <span>검색어를 입력해주세요</span>
+                        <svg viewBox="0 0 32 32" class="Icon_size-18__WNXIa"><path d="M5.026 13.49a8.5 8.5 0 1 1 17 0 8.5 8.5 0 0 1-17 0Zm8.5-10.5c-5.8 0-10.5 4.701-10.5 10.5 0 5.8 4.7 10.5 10.5 10.5 2.539 0 4.868-.901 6.684-2.402l7.108 7.11a1 1 0 0 0 1.415-1.415l-7.11-7.109a10.458 10.458 0 0 0 2.403-6.684c0-5.799-4.701-10.5-10.5-10.5Z"></path></svg>
+                    </button>
+                </div>
+                <div class="link-area">
+                    <a href="#" class="today"><span class="blind">오늘드림</span></a>
+                    <a href="#" class="cart">
+                        <span class="blind">장바구니</span>
+                        <svg viewBox="0 0 22 22" class="">
+                            <path d="M7.04553 6.46797H4.67141L3.18318 19.2667H18.8161L17.3278 6.46797H14.9537V7.46903C14.9537 7.96608 14.5507 8.36903 14.0537 8.36903C13.5566 8.36903 13.1537 7.96608 13.1537 7.46903V6.46797H8.84553V7.46903C8.84553 7.96608 8.44259 8.36903 7.94553 8.36903C7.44848 8.36903 7.04553 7.96608 7.04553 7.46903V6.46797ZM8.88096 4.66797H13.1471C13.0865 3.69216 12.6238 3.26091 12.2056 3.02945C11.9553 2.8909 11.6958 2.81427 11.4928 2.77341C11.3932 2.75336 11.3124 2.74296 11.2603 2.73771C11.2365 2.73532 11.2191 2.73403 11.209 2.7334C10.5217 2.73655 10.0751 2.9017 9.77764 3.09758C9.47353 3.29782 9.2668 3.56888 9.12384 3.86489C8.98938 4.14331 8.91771 4.43172 8.88096 4.66797ZM14.9494 4.66797H18.1293C18.5861 4.66797 18.9705 5.01023 19.0232 5.46402L20.7208 20.0628C20.7504 20.3179 20.6697 20.5735 20.4989 20.7653C20.3282 20.957 20.0836 21.0667 19.8268 21.0667H2.17247C1.91567 21.0667 1.6711 20.957 1.50032 20.7653C1.32955 20.5735 1.24883 20.3179 1.27849 20.0628L2.97602 5.46402C3.02879 5.01023 3.41316 4.66797 3.87 4.66797H7.06716C7.07299 4.60895 7.08033 4.54552 7.08959 4.47831C7.14044 4.10899 7.25218 3.60137 7.50298 3.08208C7.75607 2.55803 8.15777 2.00902 8.78776 1.5942C9.42149 1.17693 10.2289 0.93335 11.2291 0.93335L11.2517 0.933635L11.2291 1.83335C11.2517 0.933635 11.2522 0.933647 11.2527 0.93366L11.2537 0.933688L11.256 0.933752L11.2613 0.93392L11.2751 0.934447C11.2858 0.934895 11.2991 0.935553 11.3151 0.936516C11.3469 0.938441 11.3893 0.941597 11.4406 0.946764C11.5429 0.957069 11.6828 0.975547 11.848 1.0088C12.1747 1.07456 12.6214 1.20227 13.0773 1.45458C14.0021 1.96644 14.8798 2.95361 14.9494 4.66797Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <nav class="gnb">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav active">홈</a></li>
+                    <li class="nav-item"><a href="#" class="nav">오특</a></li>
+                    <li class="nav-item"><a href="#" class="nav">랭킹</a></li>
+                    <li class="nav-item"><a href="#" class="nav">LUXE EDIT</a></li>
+                    <li class="nav-item"><a href="#" class="nav">기획전</a></li>
+                    <li class="nav-item"><a href="#" class="nav">이벤트</a></li>
+                    <li class="nav-item"><a href="#" class="nav">신상</a></li>
+                </ul>
+            </nav>
+        </header>
+        <nav class="fixed-menu on">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#"><span class="blind">메뉴열기</span></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><span class="blind">매거진</span></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><span class="blind">홈</span></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><span class="blind">최근본상품</span></a>
+                </li>
+                <li class="menu-item">
+                    <a href="#"><span class="blind">마이페이지</span></a>
+                </li>
+            </ul>
+            <div id="topBtn">
+                <a href="#">
+                    <span class="blind">TOP</span>
+                    <svg viewBox="0 0 40 40" class="">
+                        <path d="M20.1855 27.5V14.677L25.2078 19.7699L26 18.9665L19.625 12.5L13.25 18.9665L14.0422 19.7699L19.0645 14.677V27.5H20.1855Z"></path>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        <!-- MAIN -->
+        <main class="container">
+            <!-- 메인 슬라이더 -->
+            <section class="sc-main-slider">
+                <h2 class="blind">메인슬라이더</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    <!-- 
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <figure class="img-box">
+                                    <img src="" alt="">
+                                </figure>
+                                <div class="text-box">
+                                    <h3></h3>
+                                    <p></p>
+                                </div>
+                            </a>
+                        </div> 
+                    -->
+                    </div>
+                    <div class="controls-wrapper">
+                        <div class="pagination"></div>
+                        <button id="mainViewAll" aria-label="전체보기"></button>
+                    </div>
+                </div>
+            </section>
+            <!-- 메인 메뉴영역 -->
+            <section class="sc-menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#">
+                            <div class="ico-box">
+                                <img src="./assets/images/ico_wcare.png" alt>
+                            </div>
+                            W CARE
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div class="ico-box">
+                                <img src="./assets/images/ico_live.png" alt>
+                            </div>
+                            라이브
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div class="ico-box">
+                                <img src="./assets/images/ico_gift.png" alt>
+                            </div>
+                            선물하기
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div class="ico-box">
+                                <img src="./assets/images/ico_review.png" alt>
+                            </div>
+                            리뷰라운지
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div class="ico-box">
+                                <img src="./assets/images/ico_sale.png" alt>
+                            </div>
+                            세일
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div class="ico-box">
+                                <img src="./assets/images/ico_membership.png" alt>
+                            </div>
+                            멤버십/쿠폰
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div class="ico-box">
+                                <img src="./assets/images/ico_awards.png" alt>
+                            </div>
+                            AWARDS
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div class="ico-box">
+                                <img src="./assets/images/ico_card.png" alt>
+                            </div>
+                            기프트카드
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- 혜택 안내 배너 -->
+            <section class="sc-banner">
+                <h2 class="blind">혜택 안내</h2>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                    <!--
+                        <li class="swiper-slide">
+                            <a href="${element.linkUrl}"><img src="${element.thumbUrl}" alt="${element.title}"></a>
+                        </li>
+                    -->
+                    </ul>
+                    <div class="pagination"></div>
+                </div>
+            </section>
+            <!-- 고객님을 위한 추천 상품 -->
+            <section class="sc-recomm">
+                <h2 class="headline">고객님을 위한 추천 상품</h2>
+                <div class="swiper">
+                    <ul class="prd-list prd-list01 swiper-wrapper">
+                    <!--
+                        <li class="prd-item swiper-slide">
+                            <a href=""></a>
+                            <figure class="img-box">
+                                <img src="" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <strong class="prd-name">
+                                    <span class="best">BEST</span>
+                    
+                                </strong>
+                                <div class="info-wrap">
+                                    <p class="price">
+                                        <del class="cost">원</del>
+                                        <em class="salePercent"></em> 원
+                                    </p>
+                                    <p class="tag">
+                                        <span class="sale">세일</span>
+                                        <span class="coupon">쿠폰</span>
+                                        <span class="gift">증정</span>
+                                        <span class="today">오늘드림</span>
+                                    </p>
+                                </div>
+                                <div class="btn-wrap">
+                                    <a href="#" class="like"><span class="blind">찜</span></a>
+                                    <a href="#" class="cart"><span class="blind">장바구니</span></a>
+                                </div>
+                            </div>
+                        </li>
+                    -->
+                    </ul>
+                </div>
+                <a href="#" class="link-more">더보기<svg viewBox="0 0 12 12" class=""><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg></a>
+            </section>
+            <!-- 카테고리 랭킹 -->
+            <section class="sc-cate-ranking">
+                <h2 class="headline">카테고리 랭킹</h2>
+                <div class="swiper-tab">
+                    <ul class="swiper-wrapper tab-list">
+                    <!-- 
+                        <li class="tab-item">
+                            <a href="" data-tab=""></a>
+                        </li> 
+                    -->
+                    </ul>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="prd-list prd-list02">
+                                <!-- <li class="prd-item">
+                                    <a href=""></a>
+                                    <figure class="img-box">
+                                        <img src="" alt="">
+                                    </figure>
+                                    <div class="text-box">
+                                        <strong class="prd-name">
+                                            <span class="best">BEST</span>
+                                        
+                                        </strong>
+                                        <div class="info-wrap">
+                                            <p class="price">
+                                                <em class="salePercent"></em> 원
+                                                <del class="cost">원</del>
+                                            </p>
+                                            <p class="tag">
+                                                <span class="sale">세일</span>
+                                                <span class="coupon">쿠폰</span>
+                                                <span class="gift">증정</span>
+                                                <span class="today">오늘드림</span>
+                                            </p>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <a href="#" class="like"><span class="blind">찜</span></a>
+                                            <a href="#" class="cart"><span class="blind">장바구니</span></a>
+                                        </div>
+                                    </div>
+                                </li>  -->
+                            </ul>
+                        </div> 
+                        <div class="swiper-slide">
+                            <ul class="prd-list prd-list02">
+                            </ul>
+                        </div> 
+                        <div class="swiper-slide">
+                            <ul class="prd-list prd-list02">
+                            </ul>
+                        </div> 
+                        <div class="swiper-slide">
+                            <ul class="prd-list prd-list02">
+                            </ul>
+                        </div> 
+                        <div class="swiper-slide">
+                            <ul class="prd-list prd-list02">
+                            </ul>
+                        </div> 
+                        <div class="swiper-slide">
+                            <ul class="prd-list prd-list02">
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="controls-wrapper2">
+                        <button class="btn prev" aria-label="이전슬라이드"></button>
+                        <div class="pagination"></div>
+                        <button class="btn next" aria-label="다음슬라이드"></button>
+                    </div>
+                </div>
+
+                <a href="#" class="link-more">더보기</a>
+            </section>
+            <!-- 선물 추천 배너 -->
+            <section class="sc-gift-recomm-banner">
+                <a href="#"><img src="./assets/images/recommBanner.jpeg" alt="만족도 높은 선물 추천"></a>
+            </section>
+            <!-- weekly -->
+            <section class="sc-weekly">
+                <h2 class="headline">Weekly Special</h2>
+                <ul class="weekly-list">
+                <!-- 
+                    <li class="weekly-item">
+                        <a href="">
+                            <figure class="img-box"><img src="" alt=""></figure>
+                            <div class="text-box">
+                                <h3><br></h3>
+                                <p></p>
+                            </div>
+                        </a>
+                    </li> 
+                -->
+                </ul>
+            </section>
+            <!-- event -->
+            <section class="sc-event">
+                <h2 class="headline">인기행사만 모았어요!</h2>
+                <div class="swiper-tab">
+                    <ul class="swiper-wrapper tab-list">
+                    <!-- 
+                        <li class="tab-item">
+                            <a href="" data-tab=""></a>
+                        </li> 
+                    -->
+                    </ul>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    <!-- 
+                        <div class="swiper-slide">
+
+                            <div class="group-head">
+                                <a href="">
+                                    <div class="bg-box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <h3><br></h3>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <ul class="prd-list prd-list02">
+                                <li class="prd-item">
+                                    <a href=""></a>
+                                    <figure class="img-box">
+                                        <img src="" alt="">
+                                    </figure>
+                                    <div class="text-box">
+                                        <strong class="prd-name">
+                                            <span class="best">BEST</span>
+                                        
+                                        </strong>
+                                        <div class="info-wrap">
+                                            <p class="price">
+                                                <em class="salePercent"></em> 원
+                                                <del class="cost">원</del>
+                                            </p>
+                                            <p class="tag">
+                                                <span class="sale">세일</span>
+                                                <span class="coupon">쿠폰</span>
+                                                <span class="gift">증정</span>
+                                                <span class="today">오늘드림</span>
+                                            </p>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <a href="#" class="like"><span class="blind">찜</span></a>
+                                            <a href="#" class="cart"><span class="blind">장바구니</span></a>
+                                        </div>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </div> 
+                    -->
+                    </div>
+                </div>
+                <div class="controls-wrapper2">
+                    <button class="btn prev" aria-label="이전슬라이드"></button>
+                    <div class="pagination"></div>
+                    <button class="btn next" aria-label="다음슬라이드"></button>
+                </div>
+                <a href="#" class="link-more">더보기</a>
+            </section>
+            <!-- dessert -->
+            <section class="sc-dessert">
+                <h2 class="headline">디저트/간식에서<br>이 상품은 어떤가요?</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="prd-list">
+                            <!-- 
+                                <li class="prd-item">
+                                    <a href=""></a>
+                                    <figure class="img-box">
+                                        <img src="" alt="">
+                                    </figure>
+                                    <div class="text-box">
+                                        <strong class="prd-name">
+                                            <span class="best">BEST</span>
+                                        
+                                        </strong>
+                                        <div class="info-wrap">
+                                            <p class="price">
+                                                <em class="salePercent"></em> 원
+                                                <del class="cost">원</del>
+                                            </p>
+                                            <p class="tag">
+                                                <span class="sale">세일</span>
+                                                <span class="coupon">쿠폰</span>
+                                                <span class="gift">증정</span>
+                                                <span class="today">오늘드림</span>
+                                            </p>
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <a href="#" class="like"><span class="blind">찜</span></a>
+                                            <a href="#" class="cart"><span class="blind">장바구니</span></a>
+                                        </div>
+                                    </div>
+                                </li>  
+                            -->
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="prd-list">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pagination pagination01"></div>
+                </div>
+                <a href="#" class="link-more">더보기<svg viewBox="0 0 12 12" class=""><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg></a>
+            </section>
+            <!-- keyword -->
+            <section class="sc-keyword">
+                <h2 class="headline">Catch Keyword</h2>
+                <ul class="keyword-list">
+                <!-- 
+                    <li class="keyword-item">
+                        <a href="">
+                            <figure class="img-box">
+                                <img src="" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </a>
+                    </li> 
+                -->
+                </ul>
+                <button class="other-btn" type="button">
+                    <svg viewBox="0 0 32 32" class="Icon_size-14__R9dbx Icon_color-gray70__83Cwo">
+                        <path d="M16.436 1.898a14.516 14.516 0 0 1 .737.036l.113.01a11.567 11.567 0 0 1 .576.058l-.27-.031.235.026.035.005h.008a14.399 14.399 0 0 1 9.305 5.058l-.008-3.204.007-.117a1 1 0 0 1 1.993.112l.014 5.898-.006.117a1 1 0 0 1-.996.885l-5.609-.013-.117-.007a1 1 0 0 1-.88-.995l.006-.117a1 1 0 0 1 .996-.881l3.386.007a12.388 12.388 0 0 0-8.652-4.792l.02.002-.168-.015.148.013a12.42 12.42 0 0 0-8.181 2.091l.044-.029c-.083.056-.166.114-.248.172l.204-.143-.244.17.04-.027a12.254 12.254 0 0 0-.566.426l.101-.08c-.072.057-.145.115-.216.174l.115-.094-.182.149.067-.055c-3.918 3.216-5.576 8.648-3.74 13.663a12.285 12.285 0 0 0 1.259 2.51l-.058-.09c.042.066.085.13.128.195l-.07-.106a12.368 12.368 0 0 0 2.117 2.449 12.45 12.45 0 0 0 4.814 2.643l-.033-.01.242.067-.209-.057c.11.031.222.061.334.09l-.125-.033c.094.025.188.05.282.072l-.157-.04c.112.029.224.056.337.081l-.18-.04c.082.02.165.038.247.057l-.067-.017a12.42 12.42 0 0 0 5.433.017l-.034.008a12.336 12.336 0 0 0 .654-.162l-.139.038c.077-.02.153-.041.229-.063l-.09.025c.1-.027.199-.056.297-.086l-.207.061c.105-.03.21-.06.314-.094l-.107.033c.085-.026.17-.052.254-.08l-.147.047c4.477-1.401 7.949-5.289 8.558-10.218a1 1 0 0 1 1.985.245c-.67 5.427-4.32 9.765-9.118 11.595l-.22.082-.023.009a14.336 14.336 0 0 1-1.955.553l-.112.022a14.351 14.351 0 0 1-6.552-.213l-.052-.014a14.293 14.293 0 0 1-6.064-3.38 14.177 14.177 0 0 1-2.055-2.405 14.16 14.16 0 0 1-2.352-9.73A14.192 14.192 0 0 1 6.37 5.685l.058-.052a8.99 8.99 0 0 1 .31-.274 14.456 14.456 0 0 1 1.444-1.087 14.353 14.353 0 0 1 7.808-2.377h.118a14.378 14.378 0 0 1 .323.003z"></path>
+                    </svg>
+                    새로운 키워드 보기<em class="current">1</em><span> / 3</span></button>
+            </section>
+            <!-- 오직 올리브영에서만 -->
+            <section class="sc-only">
+                <h2 class="headline">오직 올리브영에서만</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="img-box">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <h3></h3>
+                                    <p></p>
+                                </div>
+                            </a>
+                        </div> 
+                    -->
+                    </div>
+                </div>
+                <div class="pagination"></div>
+            </section>
+            <!-- MD가 추천해요! -->
+            <section class="sc-md">
+                <h2 class="headline">MD가 추천해요!</h2>
+                <ul class="prd-list">
+                <!-- 
+                    <li class="prd-item">
+                        <a href=""></a>
+                        <figure class="img-box ad">
+                            <img src="" alt="">
+                        </figure>
+                        <div class="text-box">
+                            <strong class="prd-name">
+                                <span class="best">BEST</span>
+                            
+                            </strong>
+                            <div class="info-wrap">
+                                <p class="price">
+                                    <em class="salePercent"></em> 원
+                                    <del class="cost">원</del>
+                                </p>
+                                <p class="tag">
+                                    <span class="sale">세일</span>
+                                    <span class="coupon">쿠폰</span>
+                                    <span class="gift">증정</span>
+                                    <span class="today">오늘드림</span>
+                                </p>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#" class="like"><span class="blind">찜</span></a>
+                                <a href="#" class="cart"><span class="blind">장바구니</span></a>
+                            </div>
+                        </div>
+                    </li> 
+                -->
+                </ul>
+            </section>
+            <!-- 이 상품 어때요? -->
+            <section class="sc-product">
+                <h2 class="headline">이 상품 어때요?</h2>
+                    <ul class="prd-list prd-list02 list1">
+                        <!-- <li class="swiper-slide prd-item">
+                            <a href=""></a>
+                            <figure class="img-box">
+                                <span class="best">BEST</span>
+                                <img src="" alt="">
+                                <a href="#like" class="like"><span class="blind">찜하기</span></a>
+                            </figure>
+                            <div class="text-box">
+                                <em class="brand-name"></em>
+                                <strong class="prd-name"></strong>
+                                <div class="info-wrap">
+                                    <p class="price">
+                                        <del class="cost"></del>
+                                        <em class="sale"></em>
+                                    </p>
+                                    <p class="tag">
+                                        <span class="sale">세일</span>
+                                        <span class="coupon">쿠폰</span>
+                                        <span class="gift">증정</span>
+                                        <span class="today">오늘드림</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <button class="other-btn" type="button">
+                        상품 더 보기
+                        <svg viewBox="0 0 32 32" class="Icon_size-14__R9dbx Icon_color-gray70__83Cwo"><path d="M24.208 11L25.62 12.415 15.996 22.032 6.38 12.415 7.793 11 15.996 19.204z"></path></svg>
+                    </button>
+                    <ul class="prd-list prd-list02 list2">
+
+                    </ul>
+            </section>
+            <!-- Healthy Life -->
+            <section class="sc-healthy">
+                <h2 class="headline">Healthy Life</h2>
+                <div class="healthy-list">
+                    <ul class="swiper-wrapper">
+                        <!-- <li class="swiper-slide healthy-item">
+                            <a href="">
+                                <figure class="img-box">
+                                    <img src="" alt="">
+                                </figure>
+                                <div class="text-box">
+                                    <h3></h3>
+                                    <p></p>
+                                </div>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </section>
+            <!-- 주목해야 할 브랜드 -->
+            <section class="sc-brand">
+                <h2 class="headline">주목해야 할 브랜드</h2>
+                <div class="swiper-tab">
+                    <ul class="swiper-wrapper tab-list">
+                        <!-- <li class="tab-item">
+                            <a href="" data-tab=""></a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="swiper brand">
+                    <div class="swiper-wrapper">
+                        <!-- <div class="swiper-slide">
+                            <div class="brand-area">
+                                <a id="" href="">
+                                    <div class="img-box">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="info-box">
+                                        <h3></h3>
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <ul class="prd-list prd-list02">
+                                <li class="prd-item">
+                                    <a href=""></a>
+                                    <figure class="img-box">
+                                        <img src="" alt="">
+                                    </figure>
+                                    <div class="text-box">
+                                        <strong class="prd-name"></strong>
+                                        <p class="price">
+                                            <del class="cost"></del>
+                                            <em class="sale"></em>
+                                        </p>
+                                        <p class="tag">
+                                            <span class="sale">세일</span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="controls-wrapper2">
+                        <button class="btn prev" aria-label="이전슬라이드"></button>
+                        <div class="pagination"></div>
+                        <button class="btn next" aria-label="다음슬라이드"></button>
+                    </div>
+                </div>
+            </section>
+            <!-- 오늘의 특가 -->
+            <section class="sc-todays-sale">
+                <h2 class="headline">오늘의 특가</h2>
+                <div class="swiper">
+                    <ul class="prd-list prd-list01 swiper-wrapper">
+                    <!--
+                        <li class="prd-item">
+                            <a href=""></a>
+                            <figure class="img-box">
+                                <img src="" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <strong class="prd-name">
+                                    <span class="best">BEST</span>
+                    
+                                </strong>
+                                <div class="info-wrap">
+                                    <p class="price">
+                                        <del class="cost">원</del>
+                                        <em class="salePercent"></em> 원
+                                    </p>
+                                    <p class="tag">
+                                        <span class="sale">세일</span>
+                                        <span class="coupon">쿠폰</span>
+                                        <span class="gift">증정</span>
+                                        <span class="today">오늘드림</span>
+                                    </p>
+                                </div>
+                                <div class="btn-wrap">
+                                    <a href="#" class="like"><span class="blind">찜</span></a>
+                                    <a href="#" class="cart"><span class="blind">장바구니</span></a>
+                                </div>
+                            </div>
+                        </li>
+                    -->
+                    </ul>
+                </div>
+                <button class="other-btn" type="button">
+                    오늘의 특가 상품 더 보러 가기 
+                    <svg viewBox="-3 0 12 12" class="Icon_size-14__R9dbx Icon_color-gray70__83Cwo"><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg>
+                </button>
+            </section>
+            <!-- 실시간 View 랭킹 -->
+            <section class="sc-ranking">
+                <h2 class="headline">실시간 View 랭킹</h2>
+                <ul class="prd-list prd-list02">
+                    <!-- <li class="prd-item">
+                        <a href=""></a>
+                        <figure class="img-box">
+                            <img src="" alt="">
+                        </figure>
+                        <div class="text-box">
+                            <strong class="prd-name">
+                                <span class="best">BEST</span>
+                            
+                            </strong>
+                            <div class="info-wrap">
+                                <p class="price">
+                                    <em class="salePercent"></em> 원
+                                    <del class="cost">원</del>
+                                </p>
+                                <p class="tag">
+                                    <span class="sale">세일</span>
+                                    <span class="coupon">쿠폰</span>
+                                    <span class="gift">증정</span>
+                                    <span class="today">오늘드림</span>
+                                </p>
+                                <em class="view"><span></span>명이 보고있어요</em>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#" class="like"><span class="blind">찜</span></a>
+                                <a href="#" class="cart"><span class="blind">장바구니</span></a>
+                            </div>
+                        </div>
+                    </li>  -->
+                </ul>
+                <a href="#" class="link-more">더보기<svg viewBox="0 0 12 12" class=""><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg></a>
+            </section>
+        </main>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="group-customer">
+                <ul class="link-list">
+                    <li><a href="tel:1522-0882">온라인몰 콜센터</a></li>
+                    <li><a href="tel:1577-4887">매장 콜센터</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+            <!-- 올리브영 정보 -->
+            <div class="group-addr">
+                <button id="addrToggle">
+                    씨제이올리브영(주)
+                </button>
+                <div class="toggle-area">
+                    <address>
+                        <p><span>대표이사</span>이선정</p>
+                        <p><span>사업자 등록번호</span>809-81-01574</p>
+                        <p><span>호스팅 사업자</span>CJ올리브네트웍스</p>
+                        <p><span>통신판매업신고번호</span>2019-서울용산-1428</p>
+                        <p><span>이메일</span>
+                            <a href="mailto:oliveweb@cj.net">liveweb@cj.net</span></a>
+                        </p>
+                        <p><span>고객센터</span>
+                            온라인몰 <a href="tel:1522-0882">1522-0882</a> <br>
+                            매장 <a href="tel:1577-4887">1577-4887</a>
+                        </p>
+                        <p><span>주소</span>(04323)서울특별시 용산구 한강대로<br>372, 24층(동자동, KDB타워)</p>
+                    </address>
+                    <ul class="link-area">
+                        <li><a href="#">사업자 정보 확인</a></li>
+                        <li><a href="#">하나은행 구매안전 서비스</a></li>
+                        <li><a href="#">사이버 감사실</a></li>
+                    </ul>
+                    <small>&copy; 올리브영 ALL RIGHTS RESERVED</small>
+                </div>
+            </div>
+            <div class="group-link">
+                <!-- 올리브영 SNS -->
+                <div class="sns-area">
+                    <h3 class="blind">OLIVE YOUNG SNS</h3>
+                    <ul class="sns-list">
+                        <li class="facebook"><a href="#"><span class="blind">페이스북</span></a></li>
+                        <li class="instagram"><a href="#"><span class="blind">인스타그램</span></a></li>
+                        <li class="youtube"><a href="#"><span class="blind">유튜브</span></a></li>
+                        <li class="kakaotalk"><a href="#"><span class="blind">카카오톡</span></a></li>
+                    </ul>
+                </div>
+                <!-- 약관 / 방침 -->
+                <ul class="link-area">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#">청소년보호방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                </ul>
+            </div>
+            <div class="group-sub">
+                <p class="responsibility">
+                    올리브영 홈페이지에서 판매되는 상품 중에는 올리브영에 입점한<br> 
+                    개별 판매자가 판매하는 상품이 포함되어 있습니다.<br>
+                    개별 판매자의 판매 상품의 경우, 올리브영은 통신판매중개자로서<br>
+                    통신판매의 당사자가 아니며 판매자가 등록한 상품정보 및<br>
+                     거래 정보 등에 대하여 책임을 부담하지 않습니다.
+                </p>
+                <a class="link-download" href="#">APP 다운로드</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+{ 
+    "items":[
+        {
+            "theme":"default",
+            "thumbUrl":"./assets/images/mainSlider01.jpg",
+            "thumbAlt":"LUXE EDIT(특가/쿠폰/이벤트)_김선영",
+            "title":"매일업데이트되는<br/>럭스에디트 특가제안",
+            "desc":"오늘의 특가아이템 확인하기",
+            "linkUrl":"#mainSlider01"
+        },
+        {
+            "theme":"default",
+            "thumbUrl":"./assets/images/mainSlider02.jpeg",
+            "thumbAlt":"이너뷰티 카캠(구매응모이벤트)_유태환",
+            "title":"반얀트리에서<br/>이너뷰티를 즐겨봐요",
+            "desc":"구매자 대상 경품응모 이벤트",
+            "linkUrl":"#mainSlider02"
+        },
+        {
+            "theme":"default",
+            "thumbUrl":"./assets/images/mainSlider03.jpeg",
+            "thumbAlt":"올영픽_김선영",
+            "title":"올리브영이 p!ck한<br/>이 달의 브랜드",
+            "desc":"베스트 아이템 한정특가",
+            "linkUrl":"#mainSlider03"
+        },
+        {
+            "theme":"white",
+            "thumbUrl":"./assets/images/mainSlider04.jpeg",
+            "thumbAlt":"럭스에디트/위시리스트_이주은",
+            "title":"여름에 안 무너지는<br/>프리미엄 메이크업",
+            "desc":"7월의 뷰티 컬처:FIX&MIX",
+            "linkUrl":"#mainSlider04"
+        },
+        {
+            "theme":"white",
+            "thumbUrl":"./assets/images/mainSlider05.jpeg",
+            "thumbAlt":"0704-5005_박수영",
+            "title":"상쾌한 일상을 위해<br/>준비해요",
+            "desc":"Y존케어 아이템 ~51%",
+            "linkUrl":"#mainSlider05"
+        },
+        {
+            "theme":"white",
+            "thumbUrl":"./assets/images/mainSlider06.jpeg",
+            "thumbAlt":"0704-1003_권세희",
+            "title":"바르는 3세대 <br/>기름종이 쿠션",
+            "desc":"파넬 한정 특가 및 럭키드로우",
+            "linkUrl":"#mainSlider06"
+        },
+        {
+            "theme":"default",
+            "thumbUrl":"./assets/images/mainSlider07.jpeg",
+            "thumbAlt":"0704-3003_서지민",
+            "title":"바로 옷을<br/>입어도<br/>산뜻해요",
+            "desc":"더마비 최대 43%할인",
+            "linkUrl":"#mainSlider07"
+        },
+        {
+            "theme":"white",
+            "thumbUrl":"./assets/images/mainSlider08.jpeg",
+            "thumbAlt":"0704-4003_김태인",
+            "title":"더위에<br/>빼앗긴 에너지<br/>신상으로 채워요",
+            "desc":"신상 건강식품 최대 31%할인",
+            "linkUrl":"#mainSlider08"
+        }
+    ]
+}

@@ -259,12 +259,12 @@
 /* swiper tab */
 .swiper-tab .tab-list{
     display: flex;
-    margin: 0 15px;
+}
+.swiper-tab{
+    padding: 0 15px;
 }
 .swiper-tab .tab-item{
     width: auto;
-}
-.swiper-tab .tab-item{
     display: block;
     padding: 5px 16px 6px;
     border:1px solid #dadde0;

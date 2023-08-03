@@ -33,7 +33,7 @@
                     <a href="#" class="today"><span class="blind">오늘드림</span></a>
                     <a href="#" class="cart">
                         <span class="blind">장바구니</span>
-                        <svg viewBox="0 0 22 22" class="">
+                        <svg viewBox="0 0 22 22">
                             <path d="M7.04553 6.46797H4.67141L3.18318 19.2667H18.8161L17.3278 6.46797H14.9537V7.46903C14.9537 7.96608 14.5507 8.36903 14.0537 8.36903C13.5566 8.36903 13.1537 7.96608 13.1537 7.46903V6.46797H8.84553V7.46903C8.84553 7.96608 8.44259 8.36903 7.94553 8.36903C7.44848 8.36903 7.04553 7.96608 7.04553 7.46903V6.46797ZM8.88096 4.66797H13.1471C13.0865 3.69216 12.6238 3.26091 12.2056 3.02945C11.9553 2.8909 11.6958 2.81427 11.4928 2.77341C11.3932 2.75336 11.3124 2.74296 11.2603 2.73771C11.2365 2.73532 11.2191 2.73403 11.209 2.7334C10.5217 2.73655 10.0751 2.9017 9.77764 3.09758C9.47353 3.29782 9.2668 3.56888 9.12384 3.86489C8.98938 4.14331 8.91771 4.43172 8.88096 4.66797ZM14.9494 4.66797H18.1293C18.5861 4.66797 18.9705 5.01023 19.0232 5.46402L20.7208 20.0628C20.7504 20.3179 20.6697 20.5735 20.4989 20.7653C20.3282 20.957 20.0836 21.0667 19.8268 21.0667H2.17247C1.91567 21.0667 1.6711 20.957 1.50032 20.7653C1.32955 20.5735 1.24883 20.3179 1.27849 20.0628L2.97602 5.46402C3.02879 5.01023 3.41316 4.66797 3.87 4.66797H7.06716C7.07299 4.60895 7.08033 4.54552 7.08959 4.47831C7.14044 4.10899 7.25218 3.60137 7.50298 3.08208C7.75607 2.55803 8.15777 2.00902 8.78776 1.5942C9.42149 1.17693 10.2289 0.93335 11.2291 0.93335L11.2517 0.933635L11.2291 1.83335C11.2517 0.933635 11.2522 0.933647 11.2527 0.93366L11.2537 0.933688L11.256 0.933752L11.2613 0.93392L11.2751 0.934447C11.2858 0.934895 11.2991 0.935553 11.3151 0.936516C11.3469 0.938441 11.3893 0.941597 11.4406 0.946764C11.5429 0.957069 11.6828 0.975547 11.848 1.0088C12.1747 1.07456 12.6214 1.20227 13.0773 1.45458C14.0021 1.96644 14.8798 2.95361 14.9494 4.66797Z"></path>
                         </svg>
                     </a>
@@ -72,7 +72,7 @@
             <div id="topBtn">
                 <a href="#">
                     <span class="blind">TOP</span>
-                    <svg viewBox="0 0 40 40" class="">
+                    <svg viewBox="0 0 40 40">
                         <path d="M20.1855 27.5V14.677L25.2078 19.7699L26 18.9665L19.625 12.5L13.25 18.9665L14.0422 19.7699L19.0645 14.677V27.5H20.1855Z"></path>
                     </svg>
                 </a>
@@ -82,8 +82,8 @@
         <main class="container">
             <!-- 메인 슬라이더 -->
             <section class="sc-main-slider">
-                <h2 class="blind">메인슬라이더</h2>
-                <div class="swiper">
+                <h2 class="blind">주요 이벤트 슬라이드</h2>
+                <div class="swiper" id="mainSlider">
                     <div class="swiper-wrapper">
                     <!-- 
                         <div class="swiper-slide">
@@ -107,6 +107,7 @@
             </section>
             <!-- 메인 메뉴영역 -->
             <section class="sc-menu">
+                <h2 class="blind">메인 메뉴영역</h2>
                 <ul class="menu-list">
                     <li class="menu-item">
                         <a href="#">
@@ -177,7 +178,7 @@
             <!-- 혜택 안내 배너 -->
             <section class="sc-banner">
                 <h2 class="blind">혜택 안내</h2>
-                <div class="swiper">
+                <div class="swiper" id="bannerSlider">
                     <ul class="swiper-wrapper">
                     <!--
                         <li class="swiper-slide">
@@ -191,7 +192,7 @@
             <!-- 고객님을 위한 추천 상품 -->
             <section class="sc-recomm">
                 <h2 class="headline">고객님을 위한 추천 상품</h2>
-                <div class="swiper">
+                <div class="swiper" id="recommSlider">
                     <ul class="prd-list prd-list01 swiper-wrapper">
                     <!--
                         <li class="prd-item swiper-slide">
@@ -225,12 +226,12 @@
                     -->
                     </ul>
                 </div>
-                <a href="#" class="link-more">더보기<svg viewBox="0 0 12 12" class=""><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg></a>
+                <a href="#" class="link-more">더보기<svg viewBox="0 0 12 12"><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg></a>
             </section>
             <!-- 카테고리 랭킹 -->
             <section class="sc-cate-ranking">
                 <h2 class="headline">카테고리 랭킹</h2>
-                <div class="swiper-tab">
+                <div class="swiper-tab" id="cateRankingTab">
                     <ul class="swiper-wrapper tab-list">
                     <!-- 
                         <li class="tab-item">
@@ -239,11 +240,12 @@
                     -->
                     </ul>
                 </div>
-                <div class="swiper">
+                <div class="swiper" id="cateRankingSlider">
                     <div class="swiper-wrapper">
+                    <!-- 
                         <div class="swiper-slide">
                             <ul class="prd-list prd-list02">
-                                <!-- <li class="prd-item">
+                               <li class="prd-item">
                                     <a href=""></a>
                                     <figure class="img-box">
                                         <img src="" alt="">
@@ -270,29 +272,10 @@
                                             <a href="#" class="cart"><span class="blind">장바구니</span></a>
                                         </div>
                                     </div>
-                                </li>  -->
+                                </li>
                             </ul>
-                        </div> 
-                        <div class="swiper-slide">
-                            <ul class="prd-list prd-list02">
-                            </ul>
-                        </div> 
-                        <div class="swiper-slide">
-                            <ul class="prd-list prd-list02">
-                            </ul>
-                        </div> 
-                        <div class="swiper-slide">
-                            <ul class="prd-list prd-list02">
-                            </ul>
-                        </div> 
-                        <div class="swiper-slide">
-                            <ul class="prd-list prd-list02">
-                            </ul>
-                        </div> 
-                        <div class="swiper-slide">
-                            <ul class="prd-list prd-list02">
-                            </ul>
-                        </div> 
+                        </div>   
+                    -->
                     </div>
                     <div class="controls-wrapper2">
                         <button class="btn prev" aria-label="이전슬라이드"></button>
@@ -397,51 +380,42 @@
             <!-- dessert -->
             <section class="sc-dessert">
                 <h2 class="headline">디저트/간식에서<br>이 상품은 어떤가요?</h2>
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <ul class="prd-list">
-                            <!-- 
-                                <li class="prd-item">
-                                    <a href=""></a>
-                                    <figure class="img-box">
-                                        <img src="" alt="">
-                                    </figure>
-                                    <div class="text-box">
-                                        <strong class="prd-name">
-                                            <span class="best">BEST</span>
-                                        
-                                        </strong>
-                                        <div class="info-wrap">
-                                            <p class="price">
-                                                <em class="salePercent"></em> 원
-                                                <del class="cost">원</del>
-                                            </p>
-                                            <p class="tag">
-                                                <span class="sale">세일</span>
-                                                <span class="coupon">쿠폰</span>
-                                                <span class="gift">증정</span>
-                                                <span class="today">오늘드림</span>
-                                            </p>
-                                        </div>
-                                        <div class="btn-wrap">
-                                            <a href="#" class="like"><span class="blind">찜</span></a>
-                                            <a href="#" class="cart"><span class="blind">장바구니</span></a>
-                                        </div>
-                                    </div>
-                                </li>  
-                            -->
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="prd-list">
-
-                            </ul>
-                        </div>
-                    </div>
+                <div class="swiper" id="dessertSlider">
+                    <ul class="swiper-wrapper prd-list">
+                    <!-- 
+                        <li class="swiper-slide prd-item">
+                            <a href=""></a>
+                            <figure class="img-box">
+                                <img src="" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <strong class="prd-name">
+                                    <span class="best">BEST</span>
+                                
+                                </strong>
+                                <div class="info-wrap">
+                                    <p class="price">
+                                        <em class="salePercent"></em> 원
+                                        <del class="cost">원</del>
+                                    </p>
+                                    <p class="tag">
+                                        <span class="sale">세일</span>
+                                        <span class="coupon">쿠폰</span>
+                                        <span class="gift">증정</span>
+                                        <span class="today">오늘드림</span>
+                                    </p>
+                                </div>
+                                <div class="btn-wrap">
+                                    <a href="#" class="like"><span class="blind">찜</span></a>
+                                    <a href="#" class="cart"><span class="blind">장바구니</span></a>
+                                </div>
+                            </div>
+                        </li>  
+                    -->
+                    </ul>
                     <div class="pagination pagination01"></div>
                 </div>
-                <a href="#" class="link-more">더보기<svg viewBox="0 0 12 12" class=""><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg></a>
+                <a href="#" class="link-more">더보기<svg viewBox="0 0 12 12"><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg></a>
             </section>
             <!-- keyword -->
             <section class="sc-keyword">
@@ -462,7 +436,7 @@
                 -->
                 </ul>
                 <button class="other-btn" type="button">
-                    <svg viewBox="0 0 32 32" class="Icon_size-14__R9dbx Icon_color-gray70__83Cwo">
+                    <svg viewBox="0 0 32 32">
                         <path d="M16.436 1.898a14.516 14.516 0 0 1 .737.036l.113.01a11.567 11.567 0 0 1 .576.058l-.27-.031.235.026.035.005h.008a14.399 14.399 0 0 1 9.305 5.058l-.008-3.204.007-.117a1 1 0 0 1 1.993.112l.014 5.898-.006.117a1 1 0 0 1-.996.885l-5.609-.013-.117-.007a1 1 0 0 1-.88-.995l.006-.117a1 1 0 0 1 .996-.881l3.386.007a12.388 12.388 0 0 0-8.652-4.792l.02.002-.168-.015.148.013a12.42 12.42 0 0 0-8.181 2.091l.044-.029c-.083.056-.166.114-.248.172l.204-.143-.244.17.04-.027a12.254 12.254 0 0 0-.566.426l.101-.08c-.072.057-.145.115-.216.174l.115-.094-.182.149.067-.055c-3.918 3.216-5.576 8.648-3.74 13.663a12.285 12.285 0 0 0 1.259 2.51l-.058-.09c.042.066.085.13.128.195l-.07-.106a12.368 12.368 0 0 0 2.117 2.449 12.45 12.45 0 0 0 4.814 2.643l-.033-.01.242.067-.209-.057c.11.031.222.061.334.09l-.125-.033c.094.025.188.05.282.072l-.157-.04c.112.029.224.056.337.081l-.18-.04c.082.02.165.038.247.057l-.067-.017a12.42 12.42 0 0 0 5.433.017l-.034.008a12.336 12.336 0 0 0 .654-.162l-.139.038c.077-.02.153-.041.229-.063l-.09.025c.1-.027.199-.056.297-.086l-.207.061c.105-.03.21-.06.314-.094l-.107.033c.085-.026.17-.052.254-.08l-.147.047c4.477-1.401 7.949-5.289 8.558-10.218a1 1 0 0 1 1.985.245c-.67 5.427-4.32 9.765-9.118 11.595l-.22.082-.023.009a14.336 14.336 0 0 1-1.955.553l-.112.022a14.351 14.351 0 0 1-6.552-.213l-.052-.014a14.293 14.293 0 0 1-6.064-3.38 14.177 14.177 0 0 1-2.055-2.405 14.16 14.16 0 0 1-2.352-9.73A14.192 14.192 0 0 1 6.37 5.685l.058-.052a8.99 8.99 0 0 1 .31-.274 14.456 14.456 0 0 1 1.444-1.087 14.353 14.353 0 0 1 7.808-2.377h.118a14.378 14.378 0 0 1 .323.003z"></path>
                     </svg>
                     새로운 키워드 보기<em class="current">1</em><span> / 3</span></button>
@@ -556,7 +530,7 @@
                     </ul>
                     <button class="other-btn" type="button">
                         상품 더 보기
-                        <svg viewBox="0 0 32 32" class="Icon_size-14__R9dbx Icon_color-gray70__83Cwo"><path d="M24.208 11L25.62 12.415 15.996 22.032 6.38 12.415 7.793 11 15.996 19.204z"></path></svg>
+                        <svg viewBox="0 0 32 32"><path d="M24.208 11L25.62 12.415 15.996 22.032 6.38 12.415 7.793 11 15.996 19.204z"></path></svg>
                     </button>
                     <ul class="prd-list prd-list02 list2">
 
@@ -671,7 +645,7 @@
                 </div>
                 <button class="other-btn" type="button">
                     오늘의 특가 상품 더 보러 가기 
-                    <svg viewBox="-3 0 12 12" class="Icon_size-14__R9dbx Icon_color-gray70__83Cwo"><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg>
+                    <svg viewBox="-3 0 12 12"><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg>
                 </button>
             </section>
             <!-- 실시간 View 랭킹 -->
@@ -708,7 +682,7 @@
                         </div>
                     </li>  -->
                 </ul>
-                <a href="#" class="link-more">더보기<svg viewBox="0 0 12 12" class=""><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg></a>
+                <a href="#" class="link-more">더보기<svg viewBox="0 0 12 12"><path d="M1.998 2.124L2.655 1.5 6.998 6 2.655 10.5 1.998 9.876 5.737 6z"></path></svg></a>
             </section>
         </main>
         <!-- FOOTER -->

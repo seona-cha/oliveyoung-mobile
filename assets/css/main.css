@@ -165,7 +165,7 @@
     gap: 5px;
     height: 16px;
 }
-.prd-list .btn-wrap a {
+.prd-list .btn-wrap button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -635,16 +635,20 @@
     top:22px;
     line-height: 22px;
 }
-.sc-dessert .swiper-slide{
-    padding: 0 15px;
+.sc-dessert .swiper{
+    margin: 0 15px;
+    overflow: hidden;
 }
 .sc-dessert .prd-list{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 2;
+    gap: 0;
+    min-height: 456px;
+    height: calc(((100vw - 30px) / 3 + 118px) * 2);
 }
 .sc-dessert .prd-item{
     width: 100%;
+    margin-top:0 !important;
+    min-height: 228px;
+    height: calc((100vw - 30px) / 3 + 118px);
 }
 .sc-dessert .prd-list .img-box{
     position: relative;
@@ -656,6 +660,9 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+.sc-dessert .prd-list .text-box{
+    height: 118px;
 }
 .sc-dessert .prd-list .prd-name{
     margin-bottom: 10px;
@@ -698,28 +705,34 @@
 .sc-only .swiper{
     width: 100%;
     height: 100%;
+    padding:0 15px;
 }
 .sc-only .swiper-wrapper{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    row-gap: 15px;
+    height:calc(124.2vw + 30px);
+    min-height: 477px;
 }
 .sc-only .swiper-slide{
     width: 100%;
-    padding: 0 15px;
+    height:41.4vw;
+    min-height: 149px;
 }
 .sc-only .swiper-slide a{
+    display: block;
+    height: 100%;
     position: relative;
     display: block;
 }
 .sc-only .img-box{
+    width: 100%;
+    height: 100%;
     border-radius: 4px;
     overflow: hidden;
 }
 .sc-only .img-box img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .sc-only .text-box{
     display: flex;

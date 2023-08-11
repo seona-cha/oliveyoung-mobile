@@ -204,7 +204,7 @@ fetch('./assets/data/category.json')
                 data = json.items;
                 html2 = ``;
 
-                for(i=0;i<5;i++){
+                for(i=0;i<6;i++){
 
                     html2+=`
                     <div class="swiper-slide">
